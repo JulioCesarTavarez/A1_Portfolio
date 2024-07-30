@@ -1,0 +1,117 @@
+
+
+
+body{
+    height: fit-content;
+    background: linear-gradient(to top, #0db398 10%, #008899 30%,black 50%, black 70%,#000000 100%);
+    color: #90119c;
+}
+header{
+    height: 2rem;
+}
+
+.more_info{
+    color: #00AD90;
+}
+.more_button{
+    background: transparent;
+    border: none;
+}
+.alighn_title{
+    grid-column: 1fr 1fr 1fr;
+    display: grid;  
+    justify-content: center; 
+}
+h1{
+    grid-area: 1/2/1/1;
+    color: #90119c;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 80vh;
+}
+.login{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+.login_button{
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+.login_button:hover {
+    color : rgb(235, 7, 231);
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+
+}
+
+.input:nth-child(6){
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.signup{
+    margin-top: 20px;
+}
+
+footer{
+    color: white;
+    align-items: center;
+    height: 2rem;
+    font-size: .8rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+}
+.created_note{
+    margin: 1rem;
+}
+.foot_icon{
+    width: 40px;
+    border-radius: 5%;
+}
+
+
+
+
+.hide{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 700px) {
+footer{
+    margin-top: 60px;
+    padding-left: 10vw;
+}
+
+.created_note{
+    margin-right: 10vw;
+}
+
+.foot_icon{
+    width:50px;
+    height: fit-content;
+
+}
+}

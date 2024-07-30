@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creat Account</title>
+    <link rel="icon" href="favicon-32x32.png">
+    <link rel="stylesheet" href="creat_account.css">
+    <script src="create_account.js" defer></script>
+</head>
+<body>
+    <header>
+      <a href="site-plan.html">
+        <button class="more_button"><p class="more_info">...</p></button>
+      </a>
+    </header>
+    <main>
+      <div id="title" class="alighn_title">         
+        <h1>Creat New Account</h1>
+      </div>
+        <div id="login" class="login">
+            <p>Already have an account?</p>
+            <a href="index.html">
+                <button class="login_button">
+                    <p>Login Here!</p>
+                </button>
+            </a>
+        </div>
+
+        <form id="creatAccountForm">
+          <div class="input">
+            <label for="Full_Name">Full Name</label>
+            <input type="text" id="Full_Name" name="Full_Name" >
+          </div>
+
+          <div class="input">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+          </div>
+
+          <div class="input">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+          </div>
+
+          <div class="input">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+          </div>
+
+          <div class="input">
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password">
+          </div>
+        </form>
+        <button id="signup" type="button" class="signup" class="sighnup">Sign up</button>
+        <div id="welcome" class="hide"></div>
+
+
+    </main>
+  <footer>
+    <p>Copyright © 2021 I_spy</p>
+    <p class="created_note">I_spy created by Julio Tavarez</p>
+    <a href="index.html">
+        <img class="foot_icon" src="Favcon.png" alt="logo" >
+    </a>
+  </footer>
+    
+</body>
+</html>

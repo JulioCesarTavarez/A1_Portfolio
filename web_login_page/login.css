@@ -1,0 +1,209 @@
+body{
+    height: fit-content;
+    background: linear-gradient(to top, #0db398 10%, #008899 30%,black 50%, black 70%,#000000 100%);
+    color: #90119c;
+    align-items: center;
+}
+header{
+    height: 2rem;
+    margin-bottom: 20px;
+}
+.more_info{
+    color: #00AD90;
+    font-size: xx-large;
+
+
+}
+.more_button{
+    background: transparent;
+    border: none;
+    margin-left: 10px;
+}
+h2{
+    color: #90119c;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: fit-content;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 40vw;
+    background-color: white;
+    border-radius: 150px;
+}
+input{
+    width: 70vw;
+    background-color: #0db398;
+    color: #0a010a;
+    border-radius: 3rem;
+    padding: .6rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+::placeholder{
+    text-align: center;
+    font-weight: bold;
+}
+
+.create-account{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: bold
+}
+button:hover {
+    color : rgb(235, 7, 231);
+    
+}
+
+.login_button{
+    width: 72vw;
+    padding: .6rem;
+    background-color: #0db398;
+    color: #90119c;
+    border-radius: 30px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.login_button:hover{
+    color: rgb(235, 7, 231);
+    background-color: #008899;
+}
+
+footer{
+    color: white;
+    align-items: center;
+    height: 2rem;
+    font-size: .8rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    margin-bottom: 40px;
+
+}
+.created_note{
+    margin: 1rem;
+}
+.foot_icon{
+    width: 40px;
+    border-radius: 5%;
+}
+
+.forgot-password{
+    background-color: transparent;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1rem;
+    
+}
+
+p{
+    font-size: 1rem;
+}
+
+.create-account{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.hide{
+    display: none;
+}
+.enter{
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add_margin{
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width:700px) {
+
+header{
+    margin-bottom: 60px;
+    
+}
+
+main{
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.card{
+    background: #629ca5;
+    border: solid;
+    border-image: linear-gradient(to right, #90119c, #0db398, #e5f3f1) 1;
+    margin-right: 1rem;
+    max-width: 400px;
+}
+
+h2{
+    font-size: 3rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    width: 90%;
+    height: 2rem;
+    font-size: 2.5rem;
+    max-width: 300px;
+    border-radius: 0%;
+}
+.login_button{
+    width: 95%;
+    border-radius: 0%;
+    font-size: 1rem;
+    max-width: 600px;
+}
+
+img{
+    border-radius: 0%;
+    width: 30vw;
+    height: 30vw;
+    border: solid;
+    border-image: linear-gradient(to top, #90119c, #0db398, #d4bcbc) 1;
+}
+
+
+::placeholder{
+    text-align: center;
+    font-size: 2rem;
+}
+
+footer{
+    margin-top: 60px;
+    padding-left: 10vw;
+}
+
+}
+.created_note{
+    margin-right: 10vw;
+}
+
+.foot_icon{
+    width:50px;
+    height: fit-content;
+
+}
+
+
+
