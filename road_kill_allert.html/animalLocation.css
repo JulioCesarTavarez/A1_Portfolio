@@ -1,0 +1,48 @@
+body{
+    height: 100%;
+    background-color: #4C591E;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+header{
+    color: #D9A566;
+    text-align: center;
+    border-bottom: solid 1px #D9A566;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+a{
+   text-decoration: none;
+   color: #D9A566;
+}
+
+main{
+    grid-template-columns: 10% 80% 10%;
+    display: grid;
+    align-items: center;
+    height:60vh;
+}
+
+.card{
+    background: #8A8C3B;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    grid-area: 1/2/ span 1/ span 1;
+
+}
+
+.entry{
+    grid-template-columns: 25% 75%;
+    display: grid;
+    margin-bottom: 1rem;
+}
+
+.getLocation{
+    grid-area: 3/2/1/1;
+}
+

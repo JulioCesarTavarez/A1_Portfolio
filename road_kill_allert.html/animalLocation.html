@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Kill Alert</title>
+    <link rel="stylesheet" href="animalLocation.css">
+    <script src="animalLocation.js" defer></script>
+
+
+</head>
+<body>
+    <header>
+        <a href="roadKillAllert.html"><h1>Road Kill Alert!</h1></a>
+        <h2>Animal Location</h2>
+    </header>
+
+
+    <main>
+        <div class="card">
+            <form>
+                <div class="entry">
+                    <label for="Animal_type">Animal: </label>
+                    <input type="text" id="Animal_type" name="Animal_type">
+                </div>
+                <div class="entry">
+                    <label for="Picture">Picture: </label>
+                    <input type="file" id="Picture" name="Picture">
+                </div>
+
+                <div class="entry">
+                    <label for="Location">Location: </label>
+                    <p id="geolocation"></p>
+                    <button type="button" id="getLocation" class="locationButton">Get Location</button>
+                </div> 
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © 2024 3io</p>
+    </footer>
+</body>
+</html>

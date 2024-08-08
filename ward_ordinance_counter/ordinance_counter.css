@@ -1,0 +1,9 @@
+body{
+    grid-template-columns: 10px 1fr 10px;
+}
+
+header{
+    grid-column: 1fr 1fr 1fr;
+    display: grid;
+    align-items: center;
+}

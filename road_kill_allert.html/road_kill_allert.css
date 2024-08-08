@@ -1,0 +1,44 @@
+body{
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+header{
+    color: red;
+    text-align: center;
+    border-bottom: solid 1px red;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+a{
+   text-decoration: none;
+   color: red;
+}
+
+.animal{
+    flex-direction: row;
+    display: flex;
+    margin-top: .5rem;
+    background: black;
+    color: white;
+    border: none;
+}
+
+.animal:hover{
+    color: red;
+}
+
+.animal-type{
+    margin-right: .5rem;
+}
+
+.date{
+    margin-right: .5rem;
+}
+
+.location{
+    margin-right: .5rem;
+}
