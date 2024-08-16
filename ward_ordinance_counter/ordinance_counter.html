@@ -17,31 +17,43 @@
             <label for="name">Name: <input type="text" id="name"></label>
 
             <div id="Ordinance_tracker" class="ordinance">
-                <label for="ordinance">Ordinance:</label>
-                <input id="ordinance" type="text" name="ordinance" list="ordinances" />
-                    <datalist id="ordinances">
-                        <option value="Baptisms"></option>
-                        <option value="Confermation"></option>
-                        <option value="Initatory"></option>
-                        <option value="Endowment"></option>
-                        <option value="Sealing"></option>
-                    </datalist>
-                <label for="number">#</label>
-                <input id="number" type="number" name="number" min="0" max="100" />
-            </div>
+                <div class="bap">
+                    <label for="baptism">Baptismal #: </label>
+                    <input id="bapnumber" type="number" name="number" min="0" max="100" />
+                </div>
 
-            <button id="Add" type="button">Add Ordinance</button>
+                <div class="conf">
+                    <label for="confermation">Confermation #: </label>
+                    <input id="bapnumber" type="number" name="number" min="0" max="100" />
+                </div>
+
+                <div class="init">
+                    <label for="Initiatory">Initatory #: </label>
+                    <input id="bapnumber" type="number" name="number" min="0" max="100" />
+                </div>
+
+                <div class="endow">
+                    <label for="Endowment">Endowment #: </label>
+                    <input id="bapnumber" type="number" name="number" min="0" max="100" />
+                </div>
+                
+                <div class="seal">
+                    <label for="Sealing">Sealing #: </label>
+                    <input id="bapnumber" type="number" name="number" min="0" max="100" />
+                </div>
+            </div>
         </form>
+
         <button id="submit" type="submit">Submit</button>
     </div>
     
     <div class="display">
         <h2>Ordinances Total</h2>
         <p class="baptotal">Baptisms = <p id="baptismaltotal"></p></p>
-        <p class="conftotal">Baptisms = <p id="confermationtotal"></p></p>
-        <p class="initotal">Baptisms = <p id="initiatorytotal"></p></p>
-        <p class="endowtotal">Baptisms = <p id="endowmenttotal"></p></p>
-        <p class="sealingtotal">Baptisms = <p id="sealingtotal"></p></p>
+        <p class="conftotal">Confirmation = <p id="confermationtotal"></p></p>
+        <p class="initotal">Initiatory = <p id="initiatorytotal"></p></p>
+        <p class="endowtotal">Endowment = <p id="endowmenttotal"></p></p>
+        <p class="sealingtotal">Sealing = <p id="sealingtotal"></p></p>
     </div>
     <footer>
         <p>Copyright &copy; 2024. All Rights Reserved. </p>
