@@ -18,22 +18,21 @@
 
     <main>
         <div class="card">
-            <form>
+            <form action="uploadAnimal.php" method="post" enctype="multipart/form-data">
                 <div class="entry">
                     <label for="Animal_type">Animal: </label>
-                    <input type="text" id="Animal_type" name="Animal_type">
+                    <input type="text" id="Animal_type" name="Animal_type" required>
                 </div>
                 <div class="entry">
                     <label for="Picture">Picture: </label>
-                    <input type="file" id="Picture" name="Picture">
+                    <input type="file" id="Picture" name="Picture" required>
                 </div>
-
                 <div class="entry">
                     <label for="Location">Location: </label>
                     <p id="geolocation"></p>
+                    <input type="hidden" id="Location" name="Location">
                     <button type="button" id="getLocation" class="locationButton">Get Location</button>
                 </div> 
-
                 <button type="submit">Submit</button>
             </form>
         </div>
