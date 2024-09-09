@@ -11,7 +11,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 -- Schema group_goal
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `group_goal` DEFAULT CHARACTER SET utf8 ;
+CREATE SCHEMA IF NOT EXISTS `group_goal` DEFAULT CHARACTER SET utf8mb3 ;
 USE `group_goal` ;
 
 -- -----------------------------------------------------
@@ -19,75 +19,24 @@ USE `group_goal` ;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `group_goal`.`user` (
   `user_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `email` VARCHAR(45) NOT NULL,
-  `password` VARCHAR(45) NOT NULL,
-  `phone_number` INT(10) NULL,
-  `name` VARCHAR(25) NOT NULL,
+  `name` VARCHAR(45) NULL,
   PRIMARY KEY (`user_id`))
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `group_goal`.`group`
+-- Table `group_goal`.`ordinance`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `group_goal`.`group` (
-  `group_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `group_name` VARCHAR(45) NOT NULL,
-  `group_code` VARCHAR(9) NOT NULL,
-  PRIMARY KEY (`group_id`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `group_goal`.`goal`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `group_goal`.`goal` (
-  `group_id` INT UNSIGNED NOT NULL,
-  `goal_name` VARCHAR(45) NOT NULL,
-  `times_done` INT NOT NULL,
-  INDEX `fk_goal_group1_idx` (`group_id` ASC) VISIBLE,
-  CONSTRAINT `fk_goal_group1`
-    FOREIGN KEY (`group_id`)
-    REFERENCES `group_goal`.`group` (`group_id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `group_goal`.`goal_completions`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `group_goal`.`goal_completions` (
+CREATE TABLE IF NOT EXISTS `group_goal`.`ordinance` (
+  `ordinance_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `amount` INT NOT NULL,
   `user_id` INT UNSIGNED NOT NULL,
-  `goal_completions_id` VARCHAR(45) NOT NULL,
-  INDEX `fk_goal_completions_user1_idx` (`user_id` ASC) VISIBLE,
-  PRIMARY KEY (`goal_completions_id`),
-  CONSTRAINT `fk_goal_completions_user1`
+  PRIMARY KEY (`ordinance_id`),
+  INDEX `fk_ordinance_user_idx` (`user_id` ASC) VISIBLE,
+  CONSTRAINT `fk_ordinance_user`
     FOREIGN KEY (`user_id`)
     REFERENCES `group_goal`.`user` (`user_id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `group_goal`.`user_group`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `group_goal`.`user_group` (
-  `user_to_group_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `user_id` INT UNSIGNED NOT NULL,
-  `group_id` INT UNSIGNED NOT NULL,
-  INDEX `fk_user_group_group1_idx` (`group_id` ASC) VISIBLE,
-  INDEX `fk_user_group_user1_idx` (`user_id` ASC) VISIBLE,
-  PRIMARY KEY (`user_to_group_id`),
-  CONSTRAINT `fk_user_group_user1`
-    FOREIGN KEY (`user_id`)
-    REFERENCES `group_goal`.`user` (`user_id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_user_group_group1`
-    FOREIGN KEY (`group_id`)
-    REFERENCES `group_goal`.`group` (`group_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
