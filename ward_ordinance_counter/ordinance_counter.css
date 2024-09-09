@@ -26,10 +26,12 @@ header{
 }
 
 .ordinance{
-    grid-template-columns: 1fr 1fr;
-    display: grid;
     gap: 5%;
     margin: 1rem 0 1rem 0;
+}
+
+.enter_number{
+    padding: 1rem 0 1rem 0;
 }
 
 .display{

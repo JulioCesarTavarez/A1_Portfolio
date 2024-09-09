@@ -3,7 +3,7 @@
  * Plugin Name: Animal Roadkill Tracker
  * Description: A plugin to track road killed animals by name, photo, and location, and display them with links to Google Maps.
  * Version: 1.0
- * Author: Your Name
+ * Author: Julio Tavarez
  */
 
 // Hook for creating the form and processing submissions
