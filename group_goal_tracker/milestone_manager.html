@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Goal Tracker</title>
+    <link rel="stylesheet" href="milestone_manager.css">
+    <script src="milestone_manager.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Milestone Manager</h1>
+        <div class="small_header">
+            <h2>Set some Goals! Track them as an Individual or a Team!</h2>
+        </div>
+    </header>
+
+    <div id="creatingGroup" class="groupCreation ">
+
+        <form class="groupForm">
+            <h3>Create Goals</h3>
+            <button id="closeButton" class="close">X</button>
+            <div class="design">
+                <div id="groupInfo" class="creatorInfo">
+                    <label for="creator_name">Creator Name: </label> <input id="group_name" type="text">
+
+                    
+                    <div class="spacing"></div> 
+                    
+                    <label for="group_name">Group Name: </label> <input id="group_name" type="text">
+                    <label for="number_of_goals">Number of Goals: </label> <input id="number_of_goals" type="number" min="1"> 
+
+                </div>
+                <div id ="goalContainer" class="goalcontainer">
+                    <div id="goalnum" class="goal">
+                        <label for="goal_name">Goal Name: </label> <input id="goal_name" type="text" required>
+                        <label for="goal_description">Goal Description: </label> <input id="goal_description" type="text">
+                        <label for="goal_points">End Goal Number: </label> <input id="goal_points" type="number" min="1" required>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="agree">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button class="terms">Terms and Conditions</button></a> 
+                <div></div>
+                <label for="agree">I agree to the terms and conditions</label>
+                <input type="checkbox" id="agree" name="agreement">
+            </div>
+            
+            <button id="finalCreateGroup" class="finalCreateButton" type="submit">Create Group</button>
+        </form>
+    </div>
+
+    <main>
+        <div class="card">
+
+            <h3>Enter Group Code</h3>
+            <div class="code">
+                <input id="groupCode" class="groupCodeInput" type="text" required>
+                <button class="enter" type="submit">Enter</button>
+            </div>
+
+            <div class="creatGroup">
+                <button id="createGroup" class="create">Create Group</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024. All Rights Reserved. </p>
+        <p>Creator: <a href="https://www.linkedin.com/in/tavarzjulio/"><button class="creator"> Julio Tavarez</p></button></a>
+    </footer>
+</body>
+</html>
