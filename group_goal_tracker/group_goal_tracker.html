@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Goal Tracker</title>
+    <link rel="stylesheet" href="group_goal_tracker.css">
+
+
+</head>
+<body>
+    <header>
+        <h1>Group Goal Tracker</h1>
+        <div class="small_header">
+            <h2>Form a Group. Set some Goals! Track them together till completion!</h2>
+        </div>
+    </header>
+
+    <div class="groupCreation">
+        <h3>Create Group</h3>
+        <form>
+            <h3>Create Group</h3>
+            <div class="creatorInfo">
+                <label for="creator_name">Creator Name: </label> <input id="group_name" type="text">
+                <label for="creator_email">Creator email: </label> <input id="group_name" type="text"> 
+            </div>
+
+            <label for="group_name">Group Name: </label> <input id="group_name" type="text">
+            <label for="number_of_goals">Number of Goals: </label> <input id="number_of_goals" type="number" min="1"> 
+            
+            <div id="goalnum" class="goal">
+                <label for="goal_name">Goal Name: </label> <input id="goal_name" type="text">
+                <label for="goal_description">Goal Description: </label> <input id="goal_description" type="text">
+                <label for="goal_points">End Goal Points: </label> <input id="goal_points" type="number" min="1">
+            </div>
+            
+            <div class="agree">
+                <label for="agree">I agree to the terms and conditions</label>
+                <input type="checkbox" id="agree" name="agreement">
+            </div>
+            
+            <button id="finalCreateGroup" class="finalCreateButton">Create Group</button>
+        </form>
+    </div>
+
+    <main>
+        <div class="card">
+
+            <h3>Enter Group Code</h3>
+            <div class="code">
+                <input id="groupCode" class="groupCodeInput" type="text">
+                <button class="enter">Enter</button>
+            </div>
+
+            <div class="creatGroup">
+                <button id="createGroup" class="create">Create Group</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024. All Rights Reserved. </p>
+        <p>Creator: <a href="https://www.linkedin.com/in/tavarzjulio/"><button class="creator"> Julio Tavarez</p></button></a>
+    </footer>
+</body>
+</html>

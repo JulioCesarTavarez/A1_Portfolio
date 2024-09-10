@@ -1,0 +1,103 @@
+body{
+    background-color: #FAF3E0;
+    height: 100vh;
+}
+
+h1{
+    color: #9C27B0;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2{
+    color: #000000;
+    text-align: center;
+    font-size: 22px;
+    padding: 5% 5% 5% 5%;
+ 
+}
+
+.card{
+    height: fit-content;
+    background-color: #FFFFFF;
+    margin: 5% 5% 5% 5%;
+    padding: 5% 5% 5% 5%;
+
+    box-shadow: 10px 10px 5px #888888;
+    text-align: center;
+}
+h3{
+    font-size: 20px;
+}
+.code{
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+    border-bottom:2px solid #000000;
+
+    margin-bottom: 10%;
+}
+
+.groupCodeInput{
+    width: 90%;
+    height: 20px;
+    grid-area: 1/2/2/2;
+    padding:5%;
+    border-radius: 5px;
+
+}
+.enter{
+    grid-area: 2/2/2/2;
+    margin-top: 5%;
+    margin-bottom: 5%;    
+    width:100%;
+    background-color: #9b64a5;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.creator{
+    border: none;
+    background-color: #FAF3E0;
+}
+
+.create{
+    background-color: #87CEEB;
+    width: 80%;
+    height:30px;
+    border-radius: 5px;
+}
+
+.hide{
+    display: none;
+}
+form{
+    background-color: #87CEEB;
+    text-align: center;
+    padding: 5% 5% 5% 5%;
+    box-shadow: 10px 10px 5px #888888;
+}
+.creatorInfo{
+
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    padding: 5px 5px 5px 5px;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 5;
+}
+
+.goal{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    background-color: #ffffff;
+    text-align: start;
+    row-gap: 10px;
+    padding: 5% 3% 5% 3%;
+    margin: 5% 5% 5% 5%;
+}
+
+@media screen and (min-width: 750px) {
+
+    
+}
