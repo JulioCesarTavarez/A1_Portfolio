@@ -21,10 +21,12 @@ numberOfGoalsInput.addEventListener('input', function() {
 const createGroup = document.getElementById('createGroup');
 createGroup.addEventListener('click', function() {
     const groupCode = document.getElementById('creatingGroup');
+    const card = document.getElementById('card');
 
 
     if (groupCode.classList.contains('hide')) {
         groupCode.classList.remove('hide');
+        card.classList.add('hide');
     }
 
 });
@@ -33,9 +35,11 @@ createGroup.addEventListener('click', function() {
 const closebutton = document.getElementById('closeButton');
 closebutton.addEventListener('click', function() {
     const groupCode = document.getElementById('creatingGroup');
+    const card = document.getElementById('card');
 
 
     groupCode.classList.add('hide');
+    card.classList.remove('hide');
 
 });
 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managing Goals</title>
+    <link rel="stylesheet" href="display_goal.css">
+    <script src="display_goal.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Managing Goals Logo">
+        <h1>Managing Goals</h1>
+        <p class="enterCode">Enter Group Code</p>
+        <input type="text" id="groupCode" class>
+    </header>
+
+    <main>
+        <h1 id="groupName" class="name"></h1>
+
+        <form>
+            <div id="goal" class="goal">
+                <label for="goalName">Goal Name: </label>
+                <p id="goalName" class="goalName"></p>
+                <input id="goalModifier" type="number" >
+            </div>
+        </form>
+
+        <div id="displayCard">
+            <div id="displayGoal">
+                <p id="displayName" class="displayName"></p>
+                <p id="displayPoints" class="displayPoints"></p>
+                <p id="displayEndGoal" class="displayEndGoal"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
